@@ -1,0 +1,47 @@
+.container {
+    width: 80%;
+    text-align: center;
+    background-color: #fad616;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+h1 {
+    font-size: 46pt;
+    letter-spacing: 5px;
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    font-size: 20pt;
+}
+
+.btn {
+    width: 80%;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+#start {
+    width: 50%;
+    font-size: 16pt;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+p {
+    font-size: 18pt;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: URL("../images/washSeal.png");
+    /* background-color: #27afca; */
+}
