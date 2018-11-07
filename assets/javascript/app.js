@@ -180,6 +180,8 @@ function answerChecker() {
 
 function displayResults() {
     if (zap = true) {
+    clearInterval(counter);
+    $("#Time").remove();
     $("#playArea" && "#Time").empty();
     $("#submitButton").empty();
     $("#playArea").html("<p>" + "You got " + correct + " correct!" + "</p>" + "<p>" 
