@@ -133,22 +133,24 @@ var questions = [
 
 var correct = 0;
 var incorrect = 0;
-var clock = 180;
+var count = 180;
+
+var counter;
 
 $("#start").on('click', function() {
     displayQuestions();
     $("#start").remove();
     $("#submitButton").show();
     $("#Time").show();
-    timer = setInterval(clock.countdown,1000);
-    $("#Time").prepend('<span id="counter"></span>');
-    countdown();
+    timer();
+    counter = setInterval(timer,1000);
 });
 
-function countdown() {
-    clock.counter--;
-    $('#Time').html(clock.counter);
-    if(clock.counter <= 0) {
+function timer() {
+    count = count-1;
+    $("#Time").html("Time remaining: " + count);
+    if (count <= 0) {
+        clearInterval(counter);
         console.log("Time is up!");
         answerChecker();
         displayResults();
